@@ -1,0 +1,68 @@
+* {
+    /* set to default */
+     font-size:100%;
+     margin:0;
+     padding:0;
+ }
+
+img {
+    max-width:100%;
+}
+
+header {
+    background-image: url("img/bg.jpg"); /* Change Image */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 540px;
+    overflow: hidden;
+}
+
+header p {
+    font-size: 200%;
+    text-transform: uppercase;
+    position: relative;
+    top: 128px;
+    left: 48px;
+}
+
+header nav {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* set nav fixed => mobile? */
+
+header nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+header nav li {
+    font-size: 150%;
+    width: 12.5%;
+    padding: 0.625em; /* 1.041666666666667% */
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+header nav ul li a:visited {
+    color: black;
+}
+
+/* header nav li a:hover {} */
+
+.column {
+    box-sizing: border-box; /* delete calculation of width */
+    float:left;
+    width: 33.3333333%;
+    padding: 0 1.041666666666667%;
+}
+
+.column img {
+    border-radius:50%;
+}
