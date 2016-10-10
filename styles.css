@@ -1,45 +1,34 @@
 * {
+
     /* set to default */
-    font-size:100%;
-    margin:0;
-    padding:0;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box; /* delete calculation of width */
+    
  }
 
 img {
 
-    max-width:100%;
+    max-width: 100%;
 
 }
 
 header {
 
-    background-image: url("img/bg.jpg"); /* Change Image */
+    background-image: url(img/codingSmall.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    height: 540px;
-    overflow: hidden;
-
-}
-
-header p {
-
-    font-size: 200%;
-    text-transform: uppercase;
-    position: relative;
-    top: 128px;
-    left: 48px;
+    height: 400px;
 
 }
 
 header nav {
 
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 
 }
-
-/* set nav fixed => mobile? */
 
 header nav ul {
 
@@ -73,10 +62,28 @@ header nav ul li a:visited {
 
 /* header nav li a:hover {} */
 
+header nav ul li a:hover {
+
+    color: rgb(153, 153, 153);
+
+}
+
+.row {
+
+    margin: 1.041666666666667% 10.416666666667%;
+
+}
+
+.row img {
+
+    margin: 1.041666666666667% 0;
+
+}
+
 .column {
 
     float:left;
-    width: 33.3333333%;
+    width: 50%;
     padding: 0 1.041666666666667%;
     text-align: center;
 }
@@ -88,7 +95,28 @@ header nav ul li a:visited {
 
 .column img {
 
-    border-radius:50%;
+    border-radius: 50%;
+
+}
+
+.skillList {
+
+    list-style-type: none;
+
+}
+
+.standardArticle {
+
+    margin: 1.041666666666667% 10.416666666667%;
+
+}
+
+.bwFooter {
+
+    border-top: 1px dotted rgba(0, 0, 0, 0.2);
+    padding: 1.041666666666667%;
+    background-color: rgba(217, 217, 217, 0.1);
+    text-align: center;
 
 }
 
@@ -96,11 +124,15 @@ header nav ul li a:visited {
 @media all and (max-width: 640px) {
 
     header nav ul {
+
         display: block;
+
     }
 
     header nav ul li {
+
         width: 100%;
+
     }
 }
 
@@ -108,8 +140,10 @@ header nav ul li a:visited {
 @media all and (max-width: 1080px) {
 
     .column {
+
         float: none;
         width: 100%;
+
     }
 
 }
