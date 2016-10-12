@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* delete calculation of width */
+    font-family: Verdana, Geneva, sans-serif;
     
  }
 
@@ -32,7 +33,7 @@ header nav {
 
 header nav ul {
 
-    display: flex;
+    display: block;
     justify-content: flex-start;
     list-style-type: none;
 
@@ -41,7 +42,7 @@ header nav ul {
 header nav li {
 
     font-size: 150%;
-    width: 12.5%;
+    width: 100%;
     padding: 0.625em; /* 1.041666666666667% */
     text-transform: uppercase;
     text-align: center;
@@ -68,44 +69,38 @@ header nav ul li a:hover {
 
 }
 
-.row {
+.bwRow {
 
     margin: 1.041666666666667% 10.416666666667%;
 
 }
 
-.row img {
+.bwRow img {
 
     margin: 1.041666666666667% 0;
 
 }
 
-.column {
+.bwColumn {
 
-    float:left;
-    width: 50%;
+    float:none;
+    width: 100%;
     padding: 1.041666666666667% 1.041666666666667%;
     text-align: center;
 }
 
-.column h2 {
+.bwColumn h2 {
     padding: 1.041666666666667%;
     text-transform: uppercase;
 }
 
-.column img {
+.bwColumn img {
 
     border-radius: 50%;
 
 }
 
-.skillList {
-
-    list-style-type: none;
-
-}
-
-.standardArticle {
+.bwStandardArticle {
 
     margin: 1.041666666666667% 10.416666666667%;
 
@@ -120,36 +115,34 @@ header nav ul li a:hover {
 
 }
 
-.bwFooter img {
-
-    width: 32px;
-    height: 32px;
-
-}
-
-/* Mobile first! -> min-width */
-@media all and (max-width: 768px) {
+@media all and (min-width: 768px)  {
 
     header nav ul {
 
-        display: block;
+        display: flex;
 
     }
 
     header nav ul li {
 
-        width: 100%;
+        width: 12.5%;
 
     }
+
+    .bwFooter img {
+
+    width: 3.333333333333%;
+    height: 3.333333333333%;
+
+}
 }
 
-/* Mobile first! -> min-width */
-@media all and (max-width: 1080px) {
+@media all and (min-width: 1080px) {
 
-    .column {
+    .bwColumn {
 
-        float: none;
-        width: 100%;
+        float: left;
+        width: 50%;
 
     }
 
