@@ -90,6 +90,7 @@ header nav ul {
 header nav li {
 
     font-size: 1.5em; /* 24px / 16px(100%) */
+    letter-spacing: 0.05em;
     font-weight: bold;
     width: 100%;
     padding: 0.625em; /* 1.041666666666667% */
