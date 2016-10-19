@@ -53,7 +53,7 @@ table {
 * {
     
     box-sizing: border-box; /* delete calculation of width */
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: Courier New, Courier, monospace;
     
  }
 
@@ -63,19 +63,10 @@ img {
 
 }
 
-header {
-
-    background-image: url(img/notebook_part1.jpg);
-    background-position: right top;
-    background-repeat: no-repeat;
-    height: 400px;
-
-}
-
 header nav {
 
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -111,8 +102,6 @@ header nav ul li a:visited {
 
 }
 
-/* header nav li a:hover {} */
-
 header nav ul li a:hover {
 
     color: rgb(153, 153, 153);
@@ -121,55 +110,38 @@ header nav ul li a:hover {
 
 .bwRow {
 
-    margin: 1.041666666666667% 10.416666666667%;
+    margin: 1.041666666666667% 0;
+    padding: 1.041666666666667% 10.416666666667%;
+    overflow: hidden;
+    background-color: rgba(70,130,180, 1);
 
 }
 
 .bwColumn {
 
-    float:none;
+    float: none;
     width: 100%;
     padding: 1.041666666666667% 1.041666666666667%;
-    text-align: center;
+    text-align: left;
 
 }
 
 .bwColumn h2 {
 
-    padding: 1.041666666666667%;
-    background-color: #8FBC8F;
-    border-radius: 5px;
-    color: white;
-
-}
-
-.bwColumn h2:hover {
-
-    opacity: 0.5;
+    font-size: 1.2em;
+    padding: 0 0 1.041666666666667%;
+    font-weight: bold;
+    text-transform: uppercase;
 
 }
 
 .bwColumn img {
-
-    height: 400px;
+    height: 300px; /* TODO */
     margin: 1.041666666666667% 0;
 
 }
 
-.bwMoreButton {
-    border: none;
-    color: white;
-    background-color: #8FBC8F;
-    text-align: center;
-    text-decoration: none;
-    margin: 0 1.041666666666667% 1.041666666666667% 1.041666666666667%;
-    padding: 1.041666666666667%;
-    border-radius: 5px;
-    float: right;
-
-}
-
-.bwStandardArticle {
+.bwStandardTextblock {
 
     margin: 1.041666666666667% 10.416666666667%;
 
@@ -184,7 +156,7 @@ header nav ul li a:hover {
 
 }
 
-    .bwFooter img {
+.bwFooter img {
 
     width: 10%;
     height: 10%;
@@ -193,11 +165,17 @@ header nav ul li a:hover {
 
 @media all and (min-width: 768px)  {
 
-    header nav ul {
 
-        display: flex;
+
+    .bwFooter img {
+
+        width: 3.333333333333%;
+        height: 3.333333333333%;
 
     }
+}
+
+@media all and (min-width: 1080px) {
 
     header nav ul li {
 
@@ -205,15 +183,11 @@ header nav ul li a:hover {
 
     }
 
-    .bwFooter img {
+    header nav ul {
 
-    width: 3.333333333333%;
-    height: 3.333333333333%;
+        display: flex;
 
     }
-}
-
-@media all and (min-width: 1080px) {
 
     .bwColumn {
 
